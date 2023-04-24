@@ -7,7 +7,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/movie" element={<Detail />}></Route>
+        {/* 이 url이 변수를 받을것이다를 /:something 으로 명시함 */}
+        <Route path="/movie/:id" element={<Detail />}></Route>
+
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </Router>

@@ -31,6 +31,7 @@ export default function Home() {
             return (
               <Movie
                 key={movie.id}
+                id={movie.id}
                 coverImg={movie.medium_cover_image}
                 code={movie.imdb_code}
                 title={movie.title_long}
