@@ -24,18 +24,6 @@ function App() {
     setSelectedCoinUSD(selectedPrice);
   };
 
-  // function CoinList({ coins, onSelected }) {
-  //   return (
-  //     <select onChange={onSelected}>
-  //       {coins.map((coin) => (
-  //         <option key={coin.id} price={coin.quotes.USD.price.toFixed(8)}>
-  //           {coin.name} ({coin.symbol}): ${coin.quotes.USD.price.toFixed(8)}
-  //         </option>
-  //       ))}
-  //     </select>
-  //   );
-  // }
-
   return (
     <div>
       <h1>The Coins! {loading ? "" : coins.length}</h1>
